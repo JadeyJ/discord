@@ -4,6 +4,18 @@
     flex: 0.25;
     height: 100VH;
     background-color: #2f3135;
+    overflow: scroll;
+}
+
+/* Chrome, Safari, Opera 에서 스크롤바 숨기기 */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* IE, Edge, Firefox 에서 스크롤바 숨기기 */
+.sidebar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .sidebar__top {

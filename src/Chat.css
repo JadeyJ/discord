@@ -8,6 +8,18 @@
 
 .chat__messages {
     flex: 1;
+    overflow: scroll;
+}
+
+/* Chrome, Safari, Opera 에서 스크롤바 숨기기 */
+.chat__messages::-webkit-scrollbar {
+    display: none;
+}
+
+/* IE, Edge, Firefox 에서 스크롤바 숨기기 */
+.chat__messages {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .chat__input {
